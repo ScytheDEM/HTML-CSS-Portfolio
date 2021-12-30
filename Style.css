@@ -1,0 +1,137 @@
+.leftside {
+  background: white;
+}
+.rightside {
+  height: 100vh;
+  width: 100%;
+}
+
+.typing {
+  margin: right;
+  color: black;
+  margin-top: -500px;
+  margin-left: 900px;
+  font-weight: 900;
+  text-transform: capitalize;
+  width: 21ch;
+  font-size: 4.1em;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 2s steps(21);
+}
+
+@keyframes typing {
+  from {
+    width: 0%;
+  }
+}
+
+#codingBlur {
+  background-repeat: no-repeat;
+  object-fit: cover;
+  height: 100vh;
+  position: relative;
+  background: white;
+}
+
+.container {
+  animation: transitionIn 1s;
+  margin: 0%;
+  padding: 0%;
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+  }
+}
+
+.aboutme {
+  float: right;
+  position: relative;
+  right: -20%;
+  color: black;
+}
+.home {
+  float: right;
+  position: relative;
+  right: 4%;
+  margin: 0%;
+  padding-right: 0%;
+  padding-top: 1.4%;
+  padding-left: 10%;
+  color: black;
+  font-family: "DM Sans", sans-serif;
+}
+
+nav {
+  display: flex;
+  margin: 0%;
+  width: 100%;
+  padding: 0%;
+  color: black;
+}
+
+#innerhome {
+  display: inline-block;
+  color: black;
+  font-family: "DM Sans", sans-serif;
+}
+
+#aliclonsdale {
+  display: flex;
+  margin: 0%;
+  color: black;
+  position: fixed;
+}
+
+#aboutme {
+  color: black;
+  font-family: "DM Sans", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: white;
+}
+
+.textOverlay {
+  position: fixed;
+  width: 200px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.overlay-title {
+  position: fixed;
+  top: 10px;
+  left: 16px;
+  color: white;
+  font-family: "DM Sans", sans-serif;
+}
+
+.TextField2 {
+  padding-top: 500px;
+  padding-left: 50px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 50px;
+}
+
+.AboutMeTextField {
+  padding-left: 500px;
+  padding-top: 100px;
+}
