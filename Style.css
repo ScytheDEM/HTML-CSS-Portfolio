@@ -1,137 +1,84 @@
-.leftside {
-  background: white;
-}
-.rightside {
-  height: 100vh;
+
+.header {
+  position:fixed;
+  left: 12px;
+  top: 0;
   width: 100%;
-}
-
-.typing {
-  margin: right;
-  color: black;
-  margin-top: -500px;
-  margin-left: 900px;
-  font-weight: 900;
-  text-transform: capitalize;
-  width: 21ch;
-  font-size: 4.1em;
-  overflow: hidden;
-  white-space: nowrap;
-  animation: typing 2s steps(21);
-}
-
-@keyframes typing {
-  from {
-    width: 0%;
-  }
-}
-
-#codingBlur {
-  background-repeat: no-repeat;
-  object-fit: cover;
-  height: 100vh;
-  position: relative;
-  background: white;
-}
-
-.container {
-  animation: transitionIn 1s;
-  margin: 0%;
-  padding: 0%;
-}
-
-@keyframes transitionIn {
-  from {
-    opacity: 0;
-    transform: rotateX(-10deg);
-  }
-
-  to {
-    opacity: 1;
-    transform: rotateX(0);
-  }
-}
-
-.aboutme {
-  float: right;
-  position: relative;
-  right: -20%;
-  color: black;
-}
-.home {
-  float: right;
-  position: relative;
-  right: 4%;
-  margin: 0%;
-  padding-right: 0%;
-  padding-top: 1.4%;
-  padding-left: 10%;
-  color: black;
-  font-family: "DM Sans", sans-serif;
-}
-
-nav {
-  display: flex;
-  margin: 0%;
-  width: 100%;
-  padding: 0%;
-  color: black;
-}
-
-#innerhome {
-  display: inline-block;
-  color: black;
-  font-family: "DM Sans", sans-serif;
-}
-
-#aliclonsdale {
-  display: flex;
-  margin: 0%;
-  color: black;
-  position: fixed;
-}
-
-#aboutme {
-  color: black;
-  font-family: "DM Sans", sans-serif;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0%;
-  padding: 0%;
-  font-family: "Nunito", sans-serif;
-}
-
-body {
-  min-height: 100vh;
-  background: white;
-}
-
-.textOverlay {
-  position: fixed;
-  width: 200px;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.overlay-title {
-  position: fixed;
-  top: 10px;
-  left: 16px;
+  z-index: 99;
+  background-color: transparent;
   color: white;
-  font-family: "DM Sans", sans-serif;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 25px;
+}
+  .wrapper .left, 
+  .wrapper .right {
+    background:white;
+    width: 50%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+  }
+
+.wrapper .image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
 }
 
-.TextField2 {
-  padding-top: 500px;
-  padding-left: 50px;
-  font-family: "DM Sans", sans-serif;
-  font-size: 50px;
+.wrapper .caption
+{
+  position: relative;
+  z-index: 10;
+  text-align: center;
 }
 
-.AboutMeTextField {
-  padding-left: 500px;
-  padding-top: 100px;
+.wrapper .caption h1 {
+  position: relative;
+  display: flex;
+    text-align: center;
+    left: 60%;
+    top: -159vh;
+    font-size: 450%;
+    font-size: 4vw;
+}
+
+.coding {
+  background:url('coding.png');
+}
+
+
+h1 {
+  white-space: nowrap;
+  overflow: hidden;    
+  font-family: 'Source Code Pro', monospace;  
+  color: black;
+}
+
+/* Animation */
+h1 {
+  animation: animated-text 1s linear 1s 1 normal both,
+             animated-cursor 8s linear infinite;
+}
+
+/* text animation */
+
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 590px;}
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor{
+  from{border-right-color: black}
+  to{border-right-color: transparent;}
 }
